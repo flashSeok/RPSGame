@@ -14,10 +14,11 @@
 		CC2592D028911643001EC07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2592CF28911643001EC07C /* Assets.xcassets */; };
 		CC2592D328911643001EC07C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2592D128911643001EC07C /* LaunchScreen.storyboard */; };
 		CC2592DD289121E5001EC07C /* Rps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2592DC289121E5001EC07C /* Rps.swift */; };
+		CCA460B5289E8C340084ACBF /* RPSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA460B4289E8C340084ACBF /* RPSManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC2592C328911642001EC07C /* RPSGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPSGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2592C328911642001EC07C /* RPSGameMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPSGameMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2592C628911642001EC07C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2592C828911642001EC07C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CC2592CA28911642001EC07C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		CC2592D228911643001EC07C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC2592D428911643001EC07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2592DC289121E5001EC07C /* Rps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rps.swift; sourceTree = "<group>"; };
+		CCA460B4289E8C340084ACBF /* RPSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,7 @@
 		CC2592C428911642001EC07C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC2592C328911642001EC07C /* RPSGame.app */,
+				CC2592C328911642001EC07C /* RPSGameMVC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,22 +62,47 @@
 			children = (
 				CC2592C628911642001EC07C /* AppDelegate.swift */,
 				CC2592C828911642001EC07C /* SceneDelegate.swift */,
-				CC2592CA28911642001EC07C /* ViewController.swift */,
-				CC2592CC28911642001EC07C /* Main.storyboard */,
+				CCA460B3289E8BE10084ACBF /* Models */,
+				CCA460B2289E8BDB0084ACBF /* Views */,
+				CCA460B1289E8BD40084ACBF /* Controllers */,
 				CC2592CF28911643001EC07C /* Assets.xcassets */,
 				CC2592D128911643001EC07C /* LaunchScreen.storyboard */,
 				CC2592D428911643001EC07C /* Info.plist */,
-				CC2592DC289121E5001EC07C /* Rps.swift */,
 			);
 			path = RPSGame;
+			sourceTree = "<group>";
+		};
+		CCA460B1289E8BD40084ACBF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC2592CA28911642001EC07C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CCA460B2289E8BDB0084ACBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC2592CC28911642001EC07C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCA460B3289E8BE10084ACBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC2592DC289121E5001EC07C /* Rps.swift */,
+				CCA460B4289E8C340084ACBF /* RPSManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC2592C228911642001EC07C /* RPSGame */ = {
+		CC2592C228911642001EC07C /* RPSGameMVC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC2592D728911643001EC07C /* Build configuration list for PBXNativeTarget "RPSGame" */;
+			buildConfigurationList = CC2592D728911643001EC07C /* Build configuration list for PBXNativeTarget "RPSGameMVC" */;
 			buildPhases = (
 				CC2592BF28911642001EC07C /* Sources */,
 				CC2592C028911642001EC07C /* Frameworks */,
@@ -85,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = RPSGame;
+			name = RPSGameMVC;
 			productName = RPSGame;
-			productReference = CC2592C328911642001EC07C /* RPSGame.app */;
+			productReference = CC2592C328911642001EC07C /* RPSGameMVC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CC2592BE28911642001EC07C /* Build configuration list for PBXProject "RPSGame" */;
+			buildConfigurationList = CC2592BE28911642001EC07C /* Build configuration list for PBXProject "RPSGameMVC" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC2592C228911642001EC07C /* RPSGame */,
+				CC2592C228911642001EC07C /* RPSGameMVC */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +172,7 @@
 				CC2592DD289121E5001EC07C /* Rps.swift in Sources */,
 				CC2592C728911642001EC07C /* AppDelegate.swift in Sources */,
 				CC2592C928911642001EC07C /* SceneDelegate.swift in Sources */,
+				CCA460B5289E8C340084ACBF /* RPSManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC2592BE28911642001EC07C /* Build configuration list for PBXProject "RPSGame" */ = {
+		CC2592BE28911642001EC07C /* Build configuration list for PBXProject "RPSGameMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC2592D528911643001EC07C /* Debug */,
@@ -354,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC2592D728911643001EC07C /* Build configuration list for PBXNativeTarget "RPSGame" */ = {
+		CC2592D728911643001EC07C /* Build configuration list for PBXNativeTarget "RPSGameMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC2592D828911643001EC07C /* Debug */,
